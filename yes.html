@@ -1,32 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <div class="container">
-      <div>
-        <h1 class="header_text">Yeeyy ! Finally</h1>
-      </div>
-      <div class="gif_container">
-        <img
-          src="https://i.postimg.cc/wTDG30TB/yes.gif"
-          alt="Cute animated illustration"
-        />
-      </div>
-      <button class="btn" id="yesButton" onclick="openWhatsApp()">
-        Let's Fix a Date
-      </button>
-    </div>
 
-    <script>
-      function openWhatsApp() {
-        // Replace with your phone number (include country code without '+')
-        const phoneNumber = "+918826232329";
-        const message = "Hi! I'd love to go out with you! 😊";
-        const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
-        window.location.href = whatsappURL;
-      }
-    </script>
-  </body>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <div class="container">
+    <div>
+      <h1 class="header_text">Yeeyy ! Finally</h1>
+    </div>
+    <div class="gif_container">
+      <img src="https://i.postimg.cc/wTDG30TB/yes.gif" alt="Cute animated illustration" loading="lazy" width="400"
+        height="400" />
+    </div>
+    <button class="btn" id="yesButton" onclick="openWhatsApp()">
+      Let's Fix a Date
+    </button>
+  </div>
+
+  <script>
+    function openWhatsApp() {
+      // Replace with your phone number (include country code without '+')
+      const phoneNumber = "+918826232329";
+      const message = "Hi! I'd love to go out with you! 😊";
+      const whatsappURL = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+      window.location.href = whatsappURL;
+    }
+  </script>
+</body>
+
 </html>
